@@ -1,3 +1,10 @@
+/*media queries*/
+@media (max-width: 1060px) {
+  .container{
+    width: 85vw !important;
+  }
+}
+
 /*tags*/
 body{
   background-color: #eee;
@@ -12,11 +19,81 @@ h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+input[type=checkbox] {
+   display: none;
+}
 
+/*sidebar*/
 /*ids & classes*/
+#sidebar {
+  /*display: none;*/
+  height: 100vh;
+  width: 15vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F44336;
+  box-shadow: 2px 2px 4px lightgray;
+  padding: 5vh;
+  box-sizing: border-box;
+}
+#sidebar > label{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.2em;
+  color: #fff;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+#slide-sidebar:checked ~ .page-content {
+  width: 100vw;
+  left: 0;
+}
+#slide-sidebar:checked ~ #sidebar {
+  position: relative;
+  left: -100px;
+  display:none;
+}
+
+#slide-sidebar:checked ~ label {
+  transform: rotate(180deg);
+  left: 20px;
+}
+#sidebar h2{
+  color: #fff;
+}
+.menu-item{
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.menu-item > a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+.menu-item > a:visited{
+  color: #fff;
+}
+
+/*page content*/
+/*ids & classes*/
+.page-content{
+  /*width: 85vw;*/
+  position: absolute;
+  display: inline-block;
+  width: 85vw;
+  margin: 0 auto;
+  left: 15vw;
+  /*right: 0;*/
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
 .container{
   display: block;
-  width: 45vw;
+  width: 50vw;
   margin: 0 auto;
 }
 .card{
@@ -38,10 +115,10 @@ h3{
   width: 200px;
   margin: 3.5vh auto 0 auto;
   padding: 15px 20px;
-  background-color: red;
+  background-color: #F44336;
   border-radius: 4px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
 }
 .button:hover{
   opacity: 0.8;
@@ -54,7 +131,7 @@ h3{
 .inline-box:hover{
   opacity: 0.8;
 }
-.movie-box{
+#movie-box{
   margin-bottom: 10px;
 }
 .movie-image{
