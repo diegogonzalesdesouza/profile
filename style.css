@@ -1,0 +1,73 @@
+/*tags*/
+body{
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h1{
+  font-family: 'Sarabun', sans-serif;
+}
+h2,
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/*ids & classes*/
+.container{
+  display: block;
+  width: 45vw;
+  margin: 0 auto;
+}
+.card{
+  background-color: #fff;
+  padding: 5vh;
+  margin: 5vh 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px lightgray;
+  text-align: center;
+}
+.large-avatar img{
+  width: 200px;
+  border-radius: 50%;
+}
+.no-text-deco{
+  text-decoration: none;
+}
+.button{
+  width: 200px;
+  margin: 3.5vh auto 0 auto;
+  padding: 15px 20px;
+  background-color: red;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 400;
+}
+.button:hover{
+  opacity: 0.8;
+}
+.inline-box{
+  display: inline-block;
+  margin: 0 20px;
+  color: #000;
+}
+.inline-box:hover{
+  opacity: 0.8;
+}
+.movie-box{
+  margin-bottom: 10px;
+}
+.movie-image{
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px lightgray;
+}
+.movie-image:hover{
+  box-shadow: 2px 2px 8px lightgray;
+}
+.movie-image > img{
+  width: 250px;
+  height: auto;
+}
